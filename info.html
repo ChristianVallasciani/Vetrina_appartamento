@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Info &amp; Contatti — Casa Azzurra</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body class="page-inner">
+
+  <!-- ============ NAVBAR ============ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Casa Azzurra</a>
+      <button class="nav-toggle" aria-label="Apri menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="galleria.html">Galleria</a></li>
+        <li><a href="info.html" class="nav-active">Info &amp; Contatti</a></li>
+        <li class="nav-call-mobile"><a href="tel:+39012345678">📞 Chiama ora · +39 012 345 678</a></li>
+      </ul>
+      <!-- PLACEHOLDER: sostituisci con il numero reale -->
+      <div class="call-wrapper">
+        <a href="tel:+39012345678" class="btn-call">📞 Chiama ora</a>
+        <span class="call-number">+39 012 345 678</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <header class="page-header">
+    <h1>Informazioni &amp; Contatti</h1>
+    <p>Dove siamo e come raggiungerci</p>
+  </header>
+
+  <!-- ============ POSIZIONE ============ -->
+  <section id="posizione">
+    <div class="container">
+      <h2 class="section-title">Posizione</h2>
+      <p class="section-subtitle">Nel cuore della riviera, a due passi da tutto</p>
+
+      <div class="location-content">
+        <div class="location-text">
+          <ul class="location-list">
+            <li>🏖️ Spiaggia — 50 m</li>
+            <li>🛒 Supermercato — 200 m</li>
+            <li>🍕 Ristoranti — 100 m</li>
+            <li>🚉 Stazione ferroviaria — 1 km</li>
+            <li>✈️ Aeroporto più vicino — 30 km</li>
+            <li>⛵ Porto turistico — 2 km</li>
+          </ul>
+        </div>
+        <div class="location-map">
+          <!-- PLACEHOLDER: Sostituisci con le coordinate reali -->
+          <iframe
+            title="Mappa posizione appartamento"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=13.8%2C43.6%2C13.9%2C43.65&layer=mapnik"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATTI ============ -->
+  <section id="contatti">
+    <div class="container">
+      <h2 class="section-title">Contattaci</h2>
+      <p class="section-subtitle">Scrivici o chiamaci per informazioni e prenotazioni</p>
+
+      <div class="contact-wrapper">
+        <!-- Info contatto laterale -->
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <h3>Telefono</h3>
+            <!-- PLACEHOLDER: sostituisci con il numero reale -->
+            <a href="tel:+39012345678" class="contact-link">+39 012 345 678</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <h3>E-mail</h3>
+            <!-- PLACEHOLDER: sostituisci con l'email reale -->
+            <a href="mailto:info@casaazzurra.example.com" class="contact-link">info@casaazzurra.example.com</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>Indirizzo</h3>
+            <!-- PLACEHOLDER: sostituisci con l'indirizzo reale -->
+            <p class="contact-link">Via del Lungomare, 42<br />00100 Città di Mare (XX)</p>
+          </div>
+        </div>
+
+        <!-- Form contatto -->
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="nome">Nome *</label>
+            <input type="text" id="nome" name="nome" required placeholder="Mario Rossi" />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" required placeholder="mario@esempio.it" />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+39 333 1234567" />
+          </div>
+          <div class="form-group">
+            <label for="messaggio">Messaggio *</label>
+            <textarea id="messaggio" name="messaggio" rows="5" required
+              placeholder="Vorrei informazioni sulla disponibilità..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Invia messaggio</button>
+          <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="galleria.html">Galleria</a>
+        <a href="info.html">Info &amp; Contatti</a>
+      </div>
+      <p>&copy; 2026 Casa Azzurra — Tutti i diritti riservati</p>
+      <p class="footer-small">Le immagini sono a scopo illustrativo.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

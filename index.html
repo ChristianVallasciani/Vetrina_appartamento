@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casa Azzurra — Appartamento sul Mare</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Casa Azzurra</a>
+      <button class="nav-toggle" aria-label="Apri menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-active">Home</a></li>
+        <li><a href="galleria.html">Galleria</a></li>
+        <li><a href="info.html">Info &amp; Contatti</a></li>
+        <li class="nav-call-mobile"><a href="tel:+39012345678">📞 Chiama ora · +39 012 345 678</a></li>
+      </ul>
+      <div class="call-wrapper">
+        <a href="tel:+39012345678" class="btn-call">📞 Chiama ora</a>
+        <span class="call-number">+39 012 345 678</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Vivi il mare.<br />Ogni giorno.</h1>
+      <p class="hero-subtitle">Appartamento elegante con 2 camere, terrazza panoramica e accesso diretto alla spiaggia. Disponibile per soggiorni settimanali e mensili.</p>
+      <div class="hero-ctas">
+        <a href="info.html#contatti" class="btn btn-primary">Prenota il tuo soggiorno</a>
+        <a href="galleria.html" class="btn btn-hero-outline">Scopri gli spazi &rarr;</a>
+      </div>
+    </div>
+    <div class="hero-info-bar">
+      <div class="hero-info-item">
+        <span class="hero-info-icon">🏖️</span>
+        <span>50 m dalla spiaggia</span>
+      </div>
+      <div class="hero-info-item">
+        <span class="hero-info-icon">🛏️</span>
+        <span>2 camere &middot; 6 posti letto</span>
+      </div>
+      <div class="hero-info-item">
+        <span class="hero-info-icon">🌅</span>
+        <span>Terrazza vista mare</span>
+      </div>
+      <div class="hero-info-item">
+        <span class="hero-info-icon">📶</span>
+        <span>Wi-Fi &middot; A/C &middot; Parcheggio</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ CARATTERISTICHE ============ -->
+  <section id="caratteristiche">
+    <div class="container">
+      <p class="advantages-heading">Prenotare con noi ha molti vantaggi</p>
+      <div class="advantages-strip">
+        <div class="advantage-card">
+          <span class="advantage-icon">📶</span>
+          <div class="advantage-text">
+            <h3>Wi-Fi gratuito</h3>
+            <p>Connessione ad alta velocità inclusa nel soggiorno. Navigate e lavorate senza pensieri.</p>
+          </div>
+        </div>
+        <div class="advantage-card">
+          <span class="advantage-icon">💰</span>
+          <div class="advantage-text">
+            <h3>Miglior prezzo garantito</h3>
+            <p>Prenotando direttamente dal nostro sito avrete sempre la tariffa più conveniente.</p>
+          </div>
+        </div>
+        <div class="advantage-card">
+          <span class="advantage-icon">🗓️</span>
+          <div class="advantage-text">
+            <h3>Prenota ora, paga all’arrivo</h3>
+            <p>Nessun pagamento anticipato. Confermate la prenotazione e saldate al check-in.</p>
+          </div>
+        </div>
+        <div class="advantage-card">
+          <span class="advantage-icon">⭐</span>
+          <div class="advantage-text">
+            <h3>Promozioni esclusive</h3>
+            <p>Offerte speciali e sconti unici riservati a chi prenota tramite il nostro sito.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ANTEPRIMA FOTO (3 immagini) ============ -->
+  <section id="anteprima-foto">
+    <div class="container">
+      <h2 class="section-title">L'appartamento</h2>
+      <p class="section-subtitle">Un'anteprima degli spazi che ti aspettano</p>
+
+      <div class="preview-grid">
+        <!-- Riga 1: due foto affiancate -->
+        <div class="preview-item">
+          <img
+            src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80"
+            alt="Soggiorno luminoso con divano e vista mare"
+            loading="lazy"
+          />
+          <div class="preview-caption">Soggiorno</div>
+        </div>
+        <div class="preview-item">
+          <img
+            src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80"
+            alt="Camera da letto matrimoniale con luce naturale"
+            loading="lazy"
+          />
+          <div class="preview-caption">Camera da letto</div>
+        </div>
+        <!-- Riga 2: una foto larga -->
+        <div class="preview-item preview-item--full">
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80"
+            alt="Spiaggia con mare cristallino"
+            loading="lazy"
+          />
+          <div class="preview-caption">La spiaggia</div>
+        </div>
+      </div>
+
+      <div class="preview-cta">
+        <a href="galleria.html" class="btn btn-primary">Vedi tutte le foto &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATTI RAPIDI (2 card) ============ -->
+  <section id="contatti-rapidi">
+    <div class="container">
+      <h2 class="section-title">Contattaci</h2>
+      <p class="section-subtitle">Per informazioni e prenotazioni</p>
+
+      <div class="quick-contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <h3>Telefono</h3>
+          <!-- PLACEHOLDER: sostituisci con il numero reale -->
+          <a href="tel:+39012345678" class="contact-link">+39 012 345 678</a>
+          <p class="contact-hint">Lun — Sab · 9:00 – 19:00</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <h3>E-mail</h3>
+          <!-- PLACEHOLDER: sostituisci con l'email reale -->
+          <a href="mailto:info@casaazzurra.example.com" class="contact-link">info@casaazzurra.example.com</a>
+          <p class="contact-hint">Rispondiamo entro 24 ore</p>
+        </div>
+      </div>
+
+      <div class="preview-cta">
+        <a href="info.html" class="btn btn-outline">Maggiori informazioni &amp; modulo contatto &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="galleria.html">Galleria</a>
+        <a href="info.html">Info &amp; Contatti</a>
+      </div>
+      <p>&copy; 2026 Casa Azzurra — Tutti i diritti riservati</p>
+      <p class="footer-small">Le immagini sono a scopo illustrativo.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

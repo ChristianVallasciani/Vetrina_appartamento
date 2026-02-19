@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galleria — Casa Azzurra</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body class="page-inner">
+
+  <!-- ============ NAVBAR ============ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Casa Azzurra</a>
+      <button class="nav-toggle" aria-label="Apri menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="galleria.html" class="nav-active">Galleria</a></li>
+        <li><a href="info.html">Info &amp; Contatti</a></li>
+        <li class="nav-call-mobile"><a href="tel:+39012345678">📞 Chiama ora · +39 012 345 678</a></li>
+      </ul>
+      <!-- PLACEHOLDER: sostituisci con il numero reale -->
+      <div class="call-wrapper">
+        <a href="tel:+39012345678" class="btn-call">📞 Chiama ora</a>
+        <span class="call-number">+39 012 345 678</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <header class="page-header">
+    <h1>Galleria Fotografica</h1>
+    <p>Esplora ogni angolo dell'appartamento e i dintorni</p>
+  </header>
+
+  <!-- ============ GALLERIA COMPLETA ============ -->
+  <section id="galleria">
+    <div class="container">
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--large">
+          <img
+            src="https://images.unsplash.com/photo-1499793983394-e58fc2440a20?w=900&q=80"
+            alt="Vista panoramica della spiaggia al tramonto"
+            loading="lazy"
+          />
+          <div class="gallery-caption">Vista dalla terrazza</div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80"
+            alt="Soggiorno luminoso con divano e vista mare"
+            loading="lazy"
+          />
+          <div class="gallery-caption">Soggiorno</div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80"
+            alt="Camera da letto matrimoniale con luce naturale"
+            loading="lazy"
+          />
+          <div class="gallery-caption">Camera da letto</div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80"
+            alt="Bagno moderno con doccia"
+            loading="lazy"
+          />
+          <div class="gallery-caption">Bagno</div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80"
+            alt="Cucina moderna e attrezzata"
+            loading="lazy"
+          />
+          <div class="gallery-caption">Cucina</div>
+        </div>
+        <div class="gallery-item gallery-item--large">
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80"
+            alt="Spiaggia con mare cristallino"
+            loading="lazy"
+          />
+          <div class="gallery-caption">La spiaggia</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Chiudi">&times;</button>
+    <button class="lightbox-prev" aria-label="Precedente">&#10094;</button>
+    <button class="lightbox-next" aria-label="Successiva">&#10095;</button>
+    <img class="lightbox-img" src="" alt="" />
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="galleria.html">Galleria</a>
+        <a href="info.html">Info &amp; Contatti</a>
+      </div>
+      <p>&copy; 2026 Casa Azzurra — Tutti i diritti riservati</p>
+      <p class="footer-small">Le immagini sono a scopo illustrativo.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
