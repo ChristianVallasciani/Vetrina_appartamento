@@ -2,6 +2,15 @@
    Casa Azzurra — Stylesheet
    =================================================== */
 
+/* ---------- Custom Font ---------- */
+@font-face {
+  font-family: 'Mebtho Francy';
+  src: url('../assets/font/BeautyRachela-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* ---------- Palette pastello UX ---------- */
 :root {
   /* Accenti pastello (mai saturi) */
@@ -83,7 +92,9 @@ h1, h2, h3 {
   font-family: "Playfair Display", Georgia, serif;
 }
 
-.section-title {
+.page-inner .section-title {
+  font-family: 'Mebtho Francy', 'Playfair Display', Georgia, serif;
+  font-style: italic;
   text-align: center;
   font-size: 2.25rem;
   margin-bottom: 0.5rem;
@@ -383,6 +394,8 @@ h1, h2, h3 {
 }
 
 .page-header h1 {
+  font-family: 'Mebtho Francy', 'Playfair Display', Georgia, serif;
+  font-style: italic;
   font-size: 2.75rem;
   margin-bottom: 0.5rem;
 }
@@ -831,6 +844,126 @@ a.contact-link:hover {
 
 .form-feedback.error {
   color: var(--rosso-tenue);
+}
+
+/* ---------- Chi Siamo & Instagram (riga affiancata) ---------- */
+.about-ig-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--bg-crema) 0%, var(--bg-lilla) 100%);
+}
+
+.about-ig-row {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-col .section-title {
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
+
+.about-col p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--testo);
+  margin-bottom: 1.25rem;
+}
+
+.about-col p:last-child {
+  margin-bottom: 0;
+}
+
+.ig-col {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .about-ig-row {
+    grid-template-columns: 1fr;
+  }
+
+  .about-col .section-title {
+    text-align: center;
+  }
+
+  .about-col p {
+    text-align: center;
+  }
+}
+
+.ig-card {
+  background: #fff;
+  border-radius: 1.25rem;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ig-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.ig-avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.25rem;
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ig-icon {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+
+.ig-handle {
+  font-size: 1.6rem;
+  color: var(--titoli);
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.ig-desc {
+  font-size: 1rem;
+  color: var(--testo-soft);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.ig-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  border: none;
+  color: #fff;
+  padding: 0.85rem 2rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.ig-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.ig-btn-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* ---------- Footer ---------- */
