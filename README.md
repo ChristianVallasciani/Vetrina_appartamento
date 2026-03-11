@@ -23,16 +23,3 @@ npx serve .
 ```
 
 Poi visita `http://localhost:8000`.
-
-## Personalizzazione
-
-I dati di contatto sono segnaposto — cerca `PLACEHOLDER` in `index.html` e sostituisci:
-
-| Segnaposto                      | Dove                 |
-| ------------------------------- | -------------------- |
-| `+39 012 345 678`               | Numero di telefono   |
-| `info@casaazzurra.example.com`  | Indirizzo e-mail     |
-| `Via del Lungomare, 42`         | Indirizzo fisico     |
-| Coordinate mappa OpenStreetMap  | Sezione "Posizione"  |
-
-Le immagini provengono da [Unsplash](https://unsplash.com/) e possono essere sostituite con foto reali dell'immobile.
