@@ -1,5 +1,5 @@
 # Casa Azzurra — Vetrina Appartamento sul Mare
-
+host: netlify dominio: aruba
 Sito vetrina statico per la promozione di un appartamento al mare.
 
 ## Struttura del progetto
