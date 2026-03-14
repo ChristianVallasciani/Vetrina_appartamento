@@ -164,4 +164,24 @@ document.addEventListener("DOMContentLoaded", () => {
       revealObserver.observe(el);
     });
   }
+
+  /* ---------- Background Music ---------- */
+  const bgMusic = document.getElementById("bg-music");
+  if (bgMusic) {
+    // Imposta il volume al 20% per un effetto rilassante di sottofondo
+    bgMusic.volume = 0.2;
+
+    // Riprova a riprodurre se l'autoplay viene bloccato
+    bgMusic.play().catch(() => {
+      console.log("Autoplay bloccato. Usa il mouse per attivare la musica.");
+      // Attiva la musica al primo click
+      document.addEventListener(
+        "click",
+        () => {
+          bgMusic.play().catch((err) => console.log("Errore nella riproduzione:", err));
+        },
+        { once: true }
+      );
+    });
+  }
 });
